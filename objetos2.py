@@ -13,4 +13,7 @@ class Alumno:
 		self.nombre = nombre
 		self.nota = nota
 
-		
+	def imprimir(self):
+		print("Nombre: ",self.nombre)
+		print("Nota: ",self.nota)
+
