@@ -6,3 +6,11 @@ atributos, imprimirlos y mostrar un mensaje si está regular
 (nota mayor o igual a 4)
 
 Definir dos objetos de la clase Alumno."""
+
+class Alumno:
+
+	def inicializar(self,nombre,nota):
+		self.nombre = nombre
+		self.nota = nota
+
+		
