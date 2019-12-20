@@ -16,3 +16,9 @@ class Persona:
 	def imprimir(self):
 		print("Nombre",self.nombre)	
 		
+# Bloque principal
+
+
+persona1 = Persona()
+persona1.inicializar("Yaque")
+persona1.imprimir()
