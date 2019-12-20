@@ -1,3 +1,6 @@
+# Mazzurque Emiliano
+# Programación Orientada a Objetos
+
 """Problema 1:
 
 Implementaremos una clase llamada Persona que tendrá como 

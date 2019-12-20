@@ -1,3 +1,6 @@
+# Mazzurque Emiliano
+# Programación Orientada a Objetos
+
 """Problema 2:
 
 Implementar una clase llamada Alumno que tenga como atributos 
