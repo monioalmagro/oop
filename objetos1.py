@@ -22,3 +22,7 @@ class Persona:
 persona1 = Persona()
 persona1.inicializar("Yaque")
 persona1.imprimir()
+
+persona2 = Persona()
+persona2.inicializar("Beto")
+persona2.imprimir()
