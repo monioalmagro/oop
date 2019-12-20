@@ -17,3 +17,12 @@ class Alumno:
 		print("Nombre: ",self.nombre)
 		print("Nota: ",self.nota)
 
+	def regular(self):
+		if self.nota >= 4:
+			print("Alumno regular.")
+		else:
+			print("Alumno no regular.")	
+
+#bloque
+
+
