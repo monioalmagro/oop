@@ -14,7 +14,7 @@ class Triangulo:
 		self.lado3 = lado3
 
 	def equilatero(self):
-		if lado1 == lado2 == lado3 :
+		if self.lado1 == self.lado2 == self.lado3 :
 			print ("es un triangulo Equilátero")
 
 
