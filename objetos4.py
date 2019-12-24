@@ -14,4 +14,12 @@ class Triangulo:
 		self.lado3 = lado3
 
 	def equilatero(self):
-		
+		if lado1 == lado2 == lado3 :
+			print ("es un triangulo Equilátero")
+
+
+triangulo=Triangulo()
+triangulo.inicializar(4,4,4)
+input("Ingrese una tecla:")
+triangulo.equilatero()
+
