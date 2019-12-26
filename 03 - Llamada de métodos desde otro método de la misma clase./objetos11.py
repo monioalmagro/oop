@@ -6,3 +6,7 @@ Debe mostrar un menú con las siguientes opciones:
 3- Consulta ingresando el nombre de la persona.
 4- Modificación de su teléfono y mail.
 5- Finalizar programa. """
+
+class Agenda:
+	def __init__(self):
+		
