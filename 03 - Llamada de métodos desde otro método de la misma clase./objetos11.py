@@ -14,4 +14,32 @@ class Agenda:
 		self.mail=[]
 
 	def menu(self):
-		int()
+		while True:
+			
+			opcion=int(input("Ingresesu opción\n 1) cargar contacto\n 2) Listar\n 3) buscar por nombre\n 4) Modificación de mail o teléfono\n 5) Salir. "))
+			if opcion == 1:
+				self.carga()
+			elif opcion == 2:
+				self.listar()
+			elif opcion == 3:
+				self.consulta()
+			elif opcion == 4:
+				self.modificar()
+			else:
+				break
+
+	def carga(self):
+	 	pass 						
+
+	def listar(self):
+	 	pass 
+
+	def consulta(self):
+	 	pass
+
+	def modificar(self):
+	 	pass 	
+
+#bloque principal
+agenda=Agenda()
+agenda.menu()
