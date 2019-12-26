@@ -12,3 +12,28 @@ class Operaciones:
 		self.resta()
 		self.multiplicacion()
 		self.division()
+
+	def suma(self):
+		suma = self.valor1 + self.valor2
+		print("La suma de los valores es ")
+		print(suma)
+
+	def resta(self):
+		resta = self.valor1 - self.valor2
+		print("La resta de los valores es ")
+		print(resta)
+
+	def multiplicacion(self):
+		multiplicacion = self.valor1 * self.valor2
+		print("La multiplicación de los valores es ")
+		print(multiplicacion)
+
+	def division(self):
+		division = self.valor1 / self.valor2
+		print("La división de los valores es ")
+		print(division)	
+
+# Bloque principal
+
+operacion = Operaciones()		
+			
