@@ -9,4 +9,9 @@ Debe mostrar un menú con las siguientes opciones:
 
 class Agenda:
 	def __init__(self):
-		
+		self.nombre=[]
+		self.telefono=[]
+		self.mail=[]
+
+	def menu(self):
+		int()
