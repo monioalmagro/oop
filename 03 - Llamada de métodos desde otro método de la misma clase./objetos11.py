@@ -7,6 +7,8 @@ Debe mostrar un menú con las siguientes opciones:
 4- Modificación de su teléfono y mail.
 5- Finalizar programa. """
 
+import os
+
 class Agenda:
 	def __init__(self):
 		self.nombre=[]
@@ -16,7 +18,7 @@ class Agenda:
 	def menu(self):
 		while True:
 			
-			opcion=int(input("Ingresesu opción\n 1) cargar contacto\n 2) Listar\n 3) buscar por nombre\n 4) Modificación de mail o teléfono\n 5) Salir. "))
+			opcion=int(input("Ingrese su opción:\n 1) cargar contacto\n 2) Listar\n 3) buscar por nombre\n 4) Modificación de mail o teléfono\n 5) Salir. "))
 			if opcion == 1:
 				self.carga()
 			elif opcion == 2:
@@ -29,16 +31,20 @@ class Agenda:
 				break
 
 	def carga(self):
-	 	pass 						
+		os.system("clear")
+	 							
 
 	def listar(self):
-	 	pass 
+		os.system("clear")
+	 	 
 
 	def consulta(self):
-	 	pass
+		os.system("clear")
+	 	
 
 	def modificar(self):
-	 	pass 	
+		os.system("clear")
+	 	 	
 
 #bloque principal
 agenda=Agenda()
