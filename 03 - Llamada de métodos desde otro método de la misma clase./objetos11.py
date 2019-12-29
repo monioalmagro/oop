@@ -7,71 +7,65 @@ Debe mostrar un menú con las siguientes opciones:
 4- Modificación de su teléfono y mail.
 5- Finalizar programa. """
 
-import os
-
 class Agenda:
-	def __init__(self):
-		self.nombre=[]
-		self.telefono=[]
-		self.mail=[]
 
-	def menu(self):
-		while True:
-			
-			opcion=int(input("Ingrese su opción:\n 1) cargar contacto\n 2) Listar\n 3) buscar por nombre\n 4) Modificación de mail o teléfono\n 5) Salir. "))
-			if opcion == 1:
-				self.carga()
-			elif opcion == 2:
-				self.listar()
-			elif opcion == 3:
-				self.consulta()
-			elif opcion == 4:
-				self.modificar()
-			else:
-				break
+    def __init__(self):
+        self.contactos={} # definimos un diccionario para almacenar los datos
 
-	def carga(self):
-		os.system("clear")
-		nom = input("Ingrese el nombre: ")
-		tel = int(input("Ingrese el teléfono: "))
-		mai = input("Ingrese el email: ")
-		self.nombre.append(nom)
-		self.telefono.append(tel)
-		self.mail.append(mai)
+    def menu(self):
+        opcion=0
+        while opcion!=5:
+            print("1- Carga de un contacto en la agenda")
+            print("2- Listado completo de la agenda")
+            print("3- Consulta ingresando el nombre de la persona")
+            print("4- Modificacion del telefono y mail")
+            print("5- Finalizar programa")
+            opcion=int(input("Ingrese su opcion:"))
+            if opcion==1:
+                self.cargar()
+            elif opcion==2:
+                self.listado()
+            elif opcion==3:
+                self.consulta()
+            elif opcion==4:
+                self.modificacion()
 
-		return self.nombre,self.telefono,self.mail
-	 							
+    def cargar(self):
+        nombre=input("Ingrese el nombre de la persona:")
+        telefono=input("Ingrese el numero de telefono:")
+        mail=input("Ingrese el mail:")
+        self.contactos[nombre]=(telefono,mail)
+        print("______________________________________________")
+        
+    def listado(self):
+        print("______________________________________________")        
+        print("Listado completo de la agenda")
+        for nombre in self.contactos:
+            print(nombre, self.contactos[nombre][0],self.contactos[nombre][1])
+        print("______________________________________________")
 
-	def listar(self):
-		os.system("clear")
-		print("Todos los contactos: ")
-		for x in range(len(self.nombre)):
-			print("Nombre:")
-			print(self.nombre[x])
-			print("Teléfono:")
-	 	 	
-			print(self.telefono[x])
-			print("Email:")
-			print(self.mail[x])
+    def consulta(self):
+        print("______________________________________________")        
+        nombre=input("Ingrese el nombre de la persona a consultar:")
+        if nombre in self.contactos:
+            print(nombre," su telefono es",self.contactos[nombre][0],"y su mail es",self.contactos[nombre][1])
+        else:
+            print("No existe un contacto con ese nombre")
+        print("______________________________________________")            
 
-	def consulta(self):
-		os.system("clear")
-		busqueda = input("Ingrese un nómbre para buscar en Contactos:")
-		for x in range (len(self.nombre)):
-			if busqueda == self.nombre[x]:
-				print("Nombre:")
-				print(self.nombre[x])
-				print("Teléfono:")
+    def modificacion(self):
+        print("______________________________________________")        
+        nombre=input("Ingrese el nombre de la persona a modificar el telefono y mail:")
+        if nombre in self.contactos:
+            telefono=input("Ingrese el nuevo telefono:")
+            mail=input("Ingrese el nuevo mail:")
+            self.contactos[nombre]=(telefono,mail)
+        else:
+            print("No existe un contaxto con ese nombre")
+        print("______________________________________________")         
+        
 
-				print(self.telefono[x])
-				print("Email:")
-				print(self.mail[x])
+# bloque principal
 
-	def modificar(self):
-		os.system("clear")
-
-	 	 	
-
-#bloque principal
 agenda=Agenda()
 agenda.menu()
