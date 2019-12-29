@@ -32,10 +32,19 @@ class Agenda:
 
 	def carga(self):
 		os.system("clear")
+		nom = input("Ingrese el nombre: ")
+		tel = int(input("Ingrese el teléfono: "))
+		mai = input("Ingrese el email: ")
+		self.nombre.append(nom)
+		self.telefono.append(tel)
+		self.mail.append(mai)
+
+		return self.nombre,self.telefono,self.mail
 	 							
 
 	def listar(self):
 		os.system("clear")
+		print
 	 	 
 
 	def consulta(self):
