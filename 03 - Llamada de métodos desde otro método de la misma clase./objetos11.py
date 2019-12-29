@@ -56,13 +56,20 @@ class Agenda:
 
 	def consulta(self):
 		os.system("clear")
-	 	busqueda = input("Ingrese un nómbre para buscar en Contactos: ")
-		if busqueda in self.nombre:
-			print("el contacto existe")
+		busqueda = input("Ingrese un nómbre para buscar en Contactos:")
+		for x in range (len(self.nombre)):
+			if busqueda == self.nombre[x]:
+				print("Nombre:")
+				print(self.nombre[x])
+				print("Teléfono:")
+
+				print(self.telefono[x])
+				print("Email:")
+				print(self.mail[x])
 
 	def modificar(self):
 		os.system("clear")
-		
+
 	 	 	
 
 #bloque principal
