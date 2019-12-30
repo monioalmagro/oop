@@ -19,5 +19,30 @@ class Cliente:
 	def imprimir(self):
 		print(self.nombre," tiene depositado la suma de : ",self.monto)
 
-			
+class Banco:
+	
+	def __init__(self):
+		self.cliente1 = Cliente("Diego")
+		self.cliente2 = Cliente("Armando")
+		self.cliente3 = Cliente("Maradona")
+
+	def operar(self):
+		self.cliente1.depositar(100)
+		self.cliente2.depositar(150)
+		self.cliente3.depositar(200)
+		self.cliente3.extraer(150)
+
+	def depositos_totales(self):
+		total=self.cliente1.retornar_monto()+self.cliente2.retornar_monto()+self.cliente3.retornar_monto()	
+		print("El total del dinero del banco es:",total)
+		self.cliente1.imprimir()
+		self.cliente2.imprimir()
+		self.cliente3.imprimir()
+
+# bloque principal        
+
+banco1=Banco()
+banco1.operar()
+banco1.depositos_totales()			
+
 
