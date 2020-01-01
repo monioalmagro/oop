@@ -28,10 +28,13 @@ class Empleado(Persona):
 
 	def imprimir(self):
 		super().imprimir()
-		print("sueldo: ",self.sueldo)		
+		print("sueldo: ",self.sueldo)
 
-
-
+	def paga_impuestos(self):
+		if self.sueldo >= 3000:
+			print("El empleado debe pagar impuestos.")
+		else:
+			print("No paga impuestos.")
 
 #bloque principal
 persona1=Persona()
