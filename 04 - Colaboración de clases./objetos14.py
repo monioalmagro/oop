@@ -17,7 +17,7 @@ class Socio:
 		print("El Socio: ",self.nombre,"tiene: ",self.anti,"años de antigüedad")	
 
 	def retornar_antiguedad(self):
-		return self.nombre,self.anti
+		return self.anti
 
 class Club:
 	
