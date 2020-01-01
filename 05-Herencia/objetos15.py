@@ -22,7 +22,7 @@ class Persona:
 		print("Edad: ",self.edad)
 
 class Empleado(Persona):
-	def __init__():
+	def __init__(self):
 		super().__init__()	
 		self.sueldo = float(input("Ingrese sueldo: "))
 
