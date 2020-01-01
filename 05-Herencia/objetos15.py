@@ -39,5 +39,10 @@ class Empleado(Persona):
 #bloque principal
 persona1=Persona()
 persona1.imprimir()
+print("---------------------------------")
+empleado1=Empleado()
+empleado1.imprimir()
+empleado1.paga_impuestos()
+
 
 
