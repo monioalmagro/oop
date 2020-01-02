@@ -65,4 +65,76 @@ resta1.cargar1()
 resta1.cargar2()
 resta1.operar()
 print("La resta de los valores es:")
-resta1.mostrar_resultado()				
+resta1.mostrar_resultado()			
+"""
+En este problema la clase Operación tiene por objetivo agrupar atributos y funcionalidades que se heredarán en otras clases.
+
+La clase Operación inicializa en el metodo __init__ tres atributos:
+
+class Operacion:
+
+    def __init__(self):
+        self.valor1=0
+        self.valor2=0
+        self.resultado=0
+
+Define dos métodos para cargar los atributos valor1 y valor2:
+
+    def cargar1(self):
+        self.valor1=int(input("Ingrese primer valor:"))
+
+    def cargar2(self):
+        self.valor2=int(input("Ingrese segundo valor:"))
+
+Definimos un método para imprimir el atributo resultado:
+
+    def mostrar_resultado(self):
+        print(self.resultado)
+
+Como la clase Operación se trata de una clase genérica que busca agrupar 
+funcionalidades y atributos para otras clases podemos definir un método 
+operar pero no podemos implementar ninguna funcionalidad:
+
+    def operar(self):
+        pass
+
+En Python para indicar que un método está vacío se utiliza la palabra clave 
+"pass".
+
+En el bloque principal de nuestro programa no creamos objetos de la clase 
+Operación. La clase Operación tiene sentido que otras clases hereden de esta.
+
+
+Tanto la clase Suma y Resta heredan de la clase Operación y reescriben el 
+método operar con la funcionalidad que le corresponde a cada clase:
+
+class Suma(Operacion):
+
+    def operar(self):
+        self.resultado=self.valor1+self.valor2
+
+
+class Resta(Operacion):
+
+    def operar(self):
+        self.resultado=self.valor1-self.valor2
+
+Finalmente en el bloque principal de nuestro programa en Python creamos un objeto de la clase Suma y otro de la clase Resta y llamamos a sus respectivos métodos en un orden lógico:
+
+# bloque princpipal
+
+suma1=Suma()
+suma1.cargar1()
+suma1.cargar2()
+suma1.operar()
+print("La suma de los dos valores es")
+suma1.mostrar_resultado()
+
+resta1=Resta()
+resta1.cargar1()
+resta1.cargar2()
+resta1.operar()
+print("La resta de los valores es:")
+resta1.mostrar_resultado()
+
+"""	
