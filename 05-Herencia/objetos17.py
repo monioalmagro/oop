@@ -6,3 +6,10 @@ Un plazo fijo añade un plazo de imposición en días y una tasa de interés.
 Hacer que la caja de ahorro no genera intereses.
 En el bloque principal del programa definir un objeto de la clase CajaAhorro y 
 otro de la clase PlazoFijo."""
+
+
+class Cuenta:
+	def __init__(self):
+		self.nombre = nombre 
+		self.monto = monto
+		
