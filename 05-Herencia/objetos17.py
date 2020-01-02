@@ -20,7 +20,37 @@ class Cuenta:
 
 class CajaAhorro(Cuenta):
 	def __init__(self,titular,monto):
-		super().__init__(titular,monto):
-		self.interes = interes
-		self.dias = dias
+		super().__init__(titular,monto)
+		
+	def imprimir(self):
+		print("Caja de ahorro:")
+		super().imprimir()	
 
+class PlazoFijo(Cuenta):
+	def __init__(self,titular,monto,plazo,interes):
+		super().__init__(titular,monto)
+		self.plazo = plazo
+		self.interes = interes	
+
+	def imprimir(self):
+		print("Cuenta de PlazoFijo.")
+		super().imprimir()
+		print("Plazo en días :",self.plazo)
+		print("Interes: ",self.interes)
+		self.ganancia_interes()
+
+	def ganancia_interes(self):
+		ganancia=self.monto*self.interes/100
+		print("Importe de interes: ",ganancia)	
+
+
+
+
+#bloque principal
+
+
+cajadeahorro1=CajaAhorro("emiliNO",5000)
+cajadeahorro1.imprimir()		
+
+plazofijo=PlazoFijo("Diego", 10000, 30, 0.75)
+plazofijo.imprimir()
