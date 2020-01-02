@@ -49,8 +49,8 @@ class PlazoFijo(Cuenta):
 #bloque principal
 
 
-cajadeahorro1=CajaAhorro("emiliNO",5000)
+cajadeahorro1=CajaAhorro("Emiliano",5000)
 cajadeahorro1.imprimir()		
 
-plazofijo=PlazoFijo("Diego", 10000, 30, 0.75)
+plazofijo=PlazoFijo("Almagro", 15000, 60, 0.75)
 plazofijo.imprimir()
