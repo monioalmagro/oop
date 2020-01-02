@@ -1,4 +1,4 @@
-"""Declarar una clase Cuenta y dos subclases CajaAhorra y PlazoFijo. 
+"""Declarar una clase Cuenta y dos subclases CajaAhorro y PlazoFijo. 
 Definir los atributos y métodos comunes entre una caja de ahorro y un plazo 
 fijo y agruparlos en la clase Cuenta.
 Una caja de ahorro y un plazo fijo tienen un nombre de titular y un monto. 
@@ -12,4 +12,10 @@ class Cuenta:
 	def __init__(self):
 		self.nombre = nombre 
 		self.monto = monto
-		
+
+class CajaAhorro(Cuenta):
+	def __init__(self):
+		super().__init__(self):
+		self.interes = interes
+		self.dias = dias
+				
