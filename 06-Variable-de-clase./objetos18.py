@@ -41,4 +41,4 @@ cliente2.imprimir()
 cliente3.imprimir()
 cliente4.imprimir()
 
-print(Cliente.suspendidos)			
+print(Cliente.suspendido)			
