@@ -15,3 +15,23 @@ class Jugador:
 	def __init__(self,nombre,puntaje):
 		self.nombre = nombre
 		self.puntaje = puntaje
+
+	def imprimir(self):
+		print("Jugador: ",self.nombre)
+		print("Puntaje: ",self.puntaje)
+		print("Fin de juego en",Jugador.minutos,"minutos")
+
+	def pasar_tiempo(self):
+		Jugador.minutos = Jugador.minutos -1
+
+
+#BP
+jugador1=Jugador("Yaque",50)		
+jugador2=Jugador("Figueroa",150)
+
+while Jugador.minutos > 0:
+	jugador1.imprimir()
+	jugador2.imprimir()
+	jugador1.pasar_tiempo()
+
+
