@@ -19,4 +19,26 @@ class Cliente:
 
 	def esta_suspendido(self):
 		if self.codigo in Cliente.suspendido :
-		
+			print("Cliente Suspendido.")
+		else:
+			print("Cliente no suspendido.")	
+
+	def suspender(self):
+		Cliente.suspendido.append(self.codigo)
+
+# bloque principal
+
+cliente1=Cliente(1,"Diego")
+cliente2=Cliente(2,"Armando")
+cliente3=Cliente(3,"Maradona")
+cliente4=Cliente(4,"Yaque")
+
+cliente3.suspender()
+cliente4.suspender()
+
+cliente1.imprimir()   
+cliente2.imprimir()
+cliente3.imprimir()
+cliente4.imprimir()
+
+print(Cliente.suspendidos)			
