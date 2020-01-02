@@ -9,13 +9,18 @@ otro de la clase PlazoFijo."""
 
 
 class Cuenta:
-	def __init__(self):
-		self.nombre = nombre 
+	def __init__(self,titular,monto):
+		self.titular = titular 
 		self.monto = monto
 
+	def imprimir(self):
+		print("Titular: ",self.titular)
+		print("Monto: ",self.monto)
+
+
 class CajaAhorro(Cuenta):
-	def __init__(self):
-		super().__init__(self):
+	def __init__(self,titular,monto):
+		super().__init__(titular,monto):
 		self.interes = interes
 		self.dias = dias
-				
+
