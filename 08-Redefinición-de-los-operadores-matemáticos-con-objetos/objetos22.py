@@ -18,3 +18,22 @@ cli1=Cliente('Ana',1200)
 cli2=Cliente('Luis',1500)
 print("El total depositado por los dos clientes es")
 print(cli1+cli2)			
+
+"""
+Definimos el método especial __add__ al que le llega como parámetro además de self un objeto.
+El objeto que llega corresponde al que se encuentra luego del operador +, es decir clie2:
+
+print(cli1+cli2)
+
+El algoritmo del método queda codificado como sigue:
+
+    def __add__(self,objeto2):
+        s=self.monto+objeto2.monto
+        return s
+
+Es muy importante tener en cuenta que debemos redefinir un operador matemático siempre y 
+cuando haga nuestro programa más legible.
+
+Debemos redefinir los operadores +,-,*,/ etc. solo para las clases que con solo leer su 
+nombre el programador intuya que operación implementaría dicho operador.
+"""
