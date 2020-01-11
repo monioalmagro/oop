@@ -24,3 +24,6 @@ __lt__(self,objeto2)
 Para el operador <=:
 
 __le__(self,objeto2)
+
+
+Es importante recordar que una redefinición de un operador tiene sentido si ayuda y hace más claro nuestro algoritmo.
