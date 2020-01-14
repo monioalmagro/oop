@@ -1,2 +1,0 @@
-tecnicas digitales de programacion
-dkfsdlflksdnhflhsndf
