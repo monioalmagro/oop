@@ -1,4 +1,4 @@
-Python nos permite utilizar distintas metodologías de programación. Hemos implementado inicialmente programas utilizando la programación lineal, luego vimos funciones y trabajamos con programación estructurada.
+Python nos permite utilizar distintas metodologías de programación.
 
 Ahora introduciremos los conceptos de programación orientada a objetos. A partir de este concepto mostraremos en forma sencilla la metodología de Programación Orientada a Objetos.
 
